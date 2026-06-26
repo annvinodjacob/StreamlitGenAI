@@ -20,7 +20,7 @@ mychat = robo.chats.create(model="gemini-flash-lite-latest")
 response_placeholder = st.empty()
 
 question = st.text_input("", placeholder="Enter your Python question here...")
-question=config+question
+question=config.system_instruction+question
 col1, col2, col3 = st.columns([4, 1, 4])
 
 with col2:
