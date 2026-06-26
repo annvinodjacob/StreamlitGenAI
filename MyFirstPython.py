@@ -3,7 +3,7 @@ from google import genai
 from google.genai import types
 config=types.GenerateContentConfig(
   system_instructions="""You are an expert in Python programming. Answer all questions asked about Python. Any queries outside Python area, respond as given below.
-  "Kindly ask questions about Python Programming Language only".
+  Kindly ask questions about Python Programming Language only.
   """)
 st.markdown(
   """
